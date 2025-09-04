@@ -58,8 +58,9 @@ function fazerLogin() {
 function mostrarLogin() {
   document.getElementById("cadastro-section").style.display = "block"
   document.getElementById("login-section").style.display = "none"
-  // Exibe o botão "Enviar" novamente
   document.querySelector('button[type="submit"]').style.display = "inline-block"
+  // Esconde o título do painel ao voltar para cadastro
+  document.getElementById("painel-titulo").style.display = "none"
 }
 
 // Função que mostra a aba do Painel e esconde o botão "Enviar"
@@ -72,6 +73,7 @@ function mostrarLogin() {
 function mostrarCadastro() {
   document.getElementById("cadastro-section").style.display = "none"
   document.getElementById("login-section").style.display = "block"
-  // Esconde o botão "Enviar"
   document.querySelector('button[type="submit"]').style.display = "none"
+  // Mostra o título do painel ao abrir o painel
+  document.getElementById("painel-titulo").style.display = "inline-block"
 }
